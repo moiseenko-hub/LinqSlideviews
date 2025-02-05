@@ -13,6 +13,9 @@ public static class ExtensionsTask
     /// двух серединных элементов списка после сортировки.
 	/// </summary>
 	/// <exception cref="InvalidOperationException">Если последовательность не содержит элементов</exception>
+	///
+	///
+	/// Как меньше??
 	public static double Median(this IEnumerable<double> items)
 	{
 		if (!items.Any())
@@ -33,6 +36,9 @@ public static class ExtensionsTask
 	/// <returns>
 	/// Возвращает последовательность, состоящую из пар соседних элементов.
 	/// Например, по последовательности {1,2,3} метод должен вернуть две пары: (1,2) и (2,3).
+	///
+	///
+	/// 
 	/// Sequence should be enumerated lazily!
 	/// </returns>
 	public static IEnumerable<(T First, T Second)> Bigrams<T>(this IEnumerable<T> items)
